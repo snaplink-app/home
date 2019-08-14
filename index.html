@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Snaplink">
+    <meta name="keywords" content="snaplink, s.nap.chat, snapchat link, add snaplink, add snapchat link, s.nap.chat link, snapchat, instagram, bio, instagram link snapchat, snaplink link, snaplink add, snaplink instagram, snaplink snapchat">
+    <meta name="robots" content="index, follow">
+    <meta name="title" content="Snaplink">
+    <meta name="application-name" content="Snaplink"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="theme-color" content="#FFFC00">
+    <link rel="canonical" href="https://snaplink.app">
+    <meta name="description" content="Add a Snapchat link to your bio. When someone clicks your link, it opens their Snapchat app and adds you as a friend.">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/logo/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/logo/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/logo/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/logo/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/logo/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/logo/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="assets/logo/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/logo/favicon-16x16.png" sizes="16x16" />
+    <meta name="msapplication-TileColor" content="#FFFC00" />
+    <meta name="msapplication-TileImage" content="assets/logo/mstile-144x144.png" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="js/preload.js"></script>
+    <script src="js/snap.js"></script>
+    <title>Snaplink</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127795430-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-127795430-6");
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="navbar">
+        <div class="tabs">
+          <a href="https://snaplink.app"><img class="logo-black" src="assets/logo/favicon-small.png"/></a>
+          <a href="https://snaplink.app">Snaplink</a>
+        </div>
+        <button class="hero-button" onclick="createYours()">Create Yours</button>
+      </div>
+      <div class="splash">
+        <h1 class="screens-headline">Add a Snapchat link to your bio.</h1>
+        <p class="description">When someone clicks your link, it opens their Snapchat app and adds you as a friend.</p>
+        <input type="text" placeholder="Snapchat username" id="snap-username" spellcheck="false" minlength="3" maxlength="15" onblur="checkSnapUsername(this)" invalid="false">
+        <div id="url-box">
+          <span>s.nap.chat/</span>
+          <input type="text" id="snap-url" placeholder="url" minlength="3" maxlength="16" spellcheck="false" onblur="checkSnapURL(this)">
+          <br>
+          <small></small>
+        </div>
+        <button class="submit" onclick="submit()">Create Link</button>
+        <small class="disclaimer">By clicking Create Link, you agree to our <a href="https://snaplink.app/docs/terms">Terms</a> and that you have read our <a href="https://snaplink.app/docs/privacy">Privacy Policy</a>.</small>
+      </div>
+    </div>
+    <div id="modal" class="up">
+      <a href="https://snaplink.app"><img class="logo-black" src="assets/logo/black/favicon-small.png"/></a>
+      <h1>s.nap.chat/<br><span id="url-read"></span></h1>
+      <button class="copy">Copy Link</button>
+    </div>
+    <div class="footer">
+      <a noref="true">&copy; 2019 Snaplink</a>
+      <a href="https://snaplink.app">Home</a>
+      <a href="https://snaplink.app/labs">Labs</a>
+      <a href="https://snaplink.app/docs/terms">Terms of Use</a>
+      <a href="https://snaplink.app/docs/privacy">Privacy Policy</a>
+      <a href="https://snaplink.app/docs/disclaimer">Disclaimer</a>
+      <a href="mailto:team@s.nap.chat">Contact</a>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

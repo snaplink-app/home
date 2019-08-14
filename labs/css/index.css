@@ -1,0 +1,135 @@
+body {
+  background: rgb(233, 39, 84);
+  color: white;
+}
+
+.navbar {
+  background: rgb(233, 39, 84);
+}
+
+.navbar > .tabs > a {
+  color: rgb(255, 252, 0);
+}
+
+.navbar > .tabs > a > span.thin {
+  color: white;
+}
+
+.navbar > .hero-button {
+  background: rgb(255, 252, 0);
+  color: rgb(233, 39, 84);
+}
+
+.splash > .content {
+  max-width: 300px;
+  margin: auto;
+  margin-top: 16vh;
+}
+
+.splash > .content > h1.hero {
+  font-size: 54px;
+}
+
+.splash > .content > h1 {
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800 !important;
+  font-size: 47px;
+  line-height: 46px;
+}
+
+.splash > .content > p {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+.splash > .content > p > a, .splash > .content > a {
+  color: rgb(255, 252, 0);
+  text-decoration-color: rgb(255, 252, 0);
+}
+
+.splash > .content > a {
+  display: block;
+}
+
+.splash > .content > p > b {
+  font-weight: 800;
+}
+
+.splash > .content > p > small > b {
+  font-weight: black;
+}
+
+.splash > .content > h3 {
+  font-size: 31px;
+  line-height: 31px;
+  margin: 31px 0px;
+  font-weight: 700;
+}
+
+.splash > .content > h6 {
+  font-size: 23px;
+  line-height: 23px;
+  font-weight: 800;
+  margin: 23px 0px;
+}
+
+.footer {
+  background: rgb(255, 252, 0);
+}
+
+.footer > a {
+  color: rgb(233, 39, 84);
+}
+.footer > a:hover {
+  text-decoration-color: rgb(233, 39, 84);
+}
+
+.splash > .content > .feature {
+  color: rgb(233, 39, 84);
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0.5rem 0px;
+  font-size: 24px;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  user-select: none;
+  background: white;
+}
+
+.splash > .content > .feature > a {
+  color: rgb(233, 39, 84);
+  text-decoration: none;
+}
+
+.splash > .content > .feature[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
+
+span.thin {
+  font-weight: 300;
+}
+
+span.accent {
+  color: rgb(255, 252, 0);
+}
+
+.watermark {
+  z-index: -100;
+  position: fixed;
+  bottom: -20vmax;
+  left: -20vmax;
+  opacity: 0.1;
+  width: 60vmax;
+  height: 60vmax;
+  transform: rotateZ(30deg);
+}
+
+.splash ::selection {
+  color: rgb(233, 39, 84) !important;
+  background: white !important;
+}

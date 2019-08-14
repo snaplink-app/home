@@ -1,0 +1,34 @@
+.verified-create-button {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.25px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #04E762;
+  color: rgb(0, 0, 0);
+  border-radius: 1.66667em;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  outline: none;
+  padding: 0.625rem 1.66667em;
+}
+
+.verified-create-verified-button {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.25px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #04E762;
+  color: rgb(0, 0, 0);
+  border-radius: 1.66667em;
+  border: 3px solid black;
+  outline: none;
+  padding: 0.625rem 1.66667em;
+}

@@ -1,0 +1,63 @@
+.snap-auth-login-button {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.25px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgb(255, 252, 0);
+  color: rgb(0, 0, 0);
+  border-radius: 1.66667em;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  outline: none;
+  padding: 0.625rem 1.66667em;
+}
+
+#login-kit-target .fp5nm8g, #login-kit-target .fe90oc4 {
+  height: 39px;
+  width: 240px;
+  padding: 0.625rem 1.66667em;
+  background-size: 20px;
+  background-position: 15px center;
+  margin: 0px;
+  cursor: pointer;
+}
+
+#login-kit-target .fp5nm8g > span {
+  font-size: 14px;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  padding-left: 30px;
+}
+
+#login-kit-target .fp5nm8g:hover {
+  box-shadow: none;
+}
+
+#login-kit-target .fe90oc4 {
+  background-position: center;
+  animation-name: override;
+}
+
+@keyframes override {
+  100% {
+    background-color:#FFFC00;
+    background-size: 20px;
+  }
+  50% {
+    background-color:#F1EE00;
+    background-size: 24px;
+  }
+}
+
+#snap-auth-results-bitmoji {
+  vertical-align: middle;
+}
+
+#snap-auth-results-external-id {
+  word-break: break-all;
+}

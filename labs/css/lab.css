@@ -1,0 +1,103 @@
+.navbar > .tabs > a {
+  white-space: nowrap;
+}
+
+.navbar > .tabs > a:nth-child(3) {
+  font-weight: 300;
+  margin-left: -1em;
+  color: white;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: calc(100vw - 325px);
+}
+.navbar > .tabs > a:nth-child(3)::before {
+  content: "\00a0";
+}
+
+.splash > .content > p > span.tag {
+  background: rgb(255, 252, 0);
+  color: rgb(233, 39, 84);
+  padding: 0.5rem;
+  margin: 0px;
+  border-radius: 0.3rem;
+  font-size: small;
+  font-weight: bold;
+  margin-top: -100rem;
+}
+
+.splash > .content > .sandbox {
+  width: 300px;
+  margin-top: 2rem;
+  min-height: 300px;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  background: white;
+}
+
+.splash > .content > .sandbox > p:first-child {
+  margin-top: 0px;
+}
+
+.splash > .content > .sandbox > p {
+  color: rgba(0,0,0,0.3);
+  font-size: small;
+}
+
+.splash > .content > .sandbox > .br {
+  font-size: 6px;
+  line-height: 6px;
+  display: block;
+  margin-top: 6px;
+  height: 6px;
+}
+
+.splash > .content > .sandbox > a {
+  color: rgba(0,0,0,0.6);
+  text-decoration: underline;
+  display: block;
+  cursor: default;
+}
+
+.splash > .content > .sandbox > .color {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 6px;
+  border: 3px solid rgba(128,128,128,0.3);
+}
+
+.splash > .content > .sandbox > p.results {
+  color: black;
+}
+
+.splash > .content > .sandbox > p.results:empty::before {
+  font-style: italic;
+  content: "(none)";
+}
+
+.splash > .content > .sandbox::before {
+  position: absolute;
+  padding: 0.5rem;
+  line-height: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  background: rgb(233, 39, 84);
+  top: 0.5rem;
+  content: "Lab Environment";
+  right: 0.5rem;
+}
+
+.splash > .content > .sandbox ::selection {
+  color: white !important;
+  background: black !important;
+}
+
+.placeholder-empty:empty::before {
+  content: "(no data)";
+  color: rgba(128,128,128,0.3);
+  font-style: italic;
+}

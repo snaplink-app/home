@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Snaplink">
+    <meta name="robots" content="index, follow">
+    <meta name="title" content="Snaplink">
+    <meta name="application-name" content="Snaplink"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="theme-color" content="#FFFC00">
+    <link rel="canonical" href="https://snaplink.app/labs/snap-auth">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/logo/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/logo/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/logo/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/logo/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../assets/logo/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../assets/logo/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../assets/logo/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/logo/favicon-16x16.png" sizes="16x16" />
+    <meta name="msapplication-TileColor" content="#FFFC00" />
+    <meta name="msapplication-TileImage" content="../assets/logo/mstile-144x144.png" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/lab.css">
+    <link rel="stylesheet" href="css/snap-auth.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Snaplink</title>
+    <script src="js/index.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127795430-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-127795430-6");
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="navbar">
+        <div class="tabs">
+          <a href="https://snaplink.app/labs"><img class="logo-yellow" src="../assets/logo/favicon-small.png"/></a>
+          <a href="https://snaplink.app/labs">Snaplink <span class="thin">Labs</span></a>
+          <a href="https://snaplink.app/labs/snap-auth">/ snap-auth</a>
+        </div>
+        <button class="hero-button" onclick="explore()">Explore</button>
+      </div>
+      <div class="splash">
+        <div class="content">
+          <h1 class="hero">snap-auth</h1>
+          <p><span class="tag">Unreleased</span></p>
+          <br>
+          <p>Next-generation authentication for Snaplink, utilizing Snapchat's Login Kit to verify and authenticate users.</p>
+          <div class="sandbox">
+            <p>Colors</p>
+            <div style="background: #FFFC00;" class="color"></div>
+            <div style="background: #000000;" class="color"></div>
+            <div style="background: #FFFFFF;" class="color"></div>
+            <br>
+            <p>Assets</p>
+            <div id="login-kit-target"></div>
+            <div class="br"></div>
+            <button class="snap-auth-login-button" onclick="loginClick()">Login with Snapchat</button>
+            <br>
+            <p>Data</p>
+            <p id="snap-auth-results" class="results">
+              <b>Name: </b><span id="snap-auth-results-name" class="placeholder-empty"></span>
+              <br>
+              <b>External ID: </b><span id="snap-auth-results-external-id" class="placeholder-empty"></span>
+              <br><br>
+              <b>Bitmoji: </b><img width="30px" id="snap-auth-results-bitmoji"/>
+            </p>
+            <script src="js/snap-auth.js"></script>
+            <script src="https://sdk.snapkit.com/js/v1/login.js"></script>
+          </div>
+          <p><br><small><b>Warning:</b> all Snaplink Labs features are in beta. Use them at your own risk.</small></p>
+        </div>
+      </div>
+      <div class="footer">
+        <a noref>&copy; 2019 Snaplink</a>
+        <a href="https://snaplink.app">Home</a>
+        <a href="https://snaplink.app/labs">Labs</a>
+        <a href="mailto:team@s.nap.chat">Contact</a>
+      </div>
+    </div>
+  </body>
+</html>

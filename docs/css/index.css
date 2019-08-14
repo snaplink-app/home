@@ -1,0 +1,68 @@
+body {
+  background: rgb(255, 252, 0);
+}
+
+.navbar {
+  background: rgb(255, 252, 0);
+}
+
+.navbar > .hero-button {
+  background: black;
+  color: white;
+}
+
+.splash > .content {
+  max-width: 300px;
+  margin: auto;
+  margin-top: 16vh;
+}
+
+.splash > .content > h1 {
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800 !important;
+  font-size: 47px;
+  line-height: 46px;
+}
+
+.splash > .content > p {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+.splash > .content > p > a, .splash > .content > a {
+  color: black;
+  text-decoration-color: black;
+}
+
+.splash > .content > a {
+  display: block;
+}
+
+.splash > .content > p > b {
+  font-weight: 800;
+}
+
+.splash > .content > h3 {
+  font-size: 31px;
+  line-height: 31px;
+  margin: 31px 0px;
+  font-weight: 700;
+}
+
+.splash > .content > h6 {
+  font-size: 23px;
+  line-height: 23px;
+  font-weight: 800;
+  margin: 23px 0px;
+}
+
+.footer {
+  background: black;
+}
+
+.splash ::selection {
+  color: rgb(255, 252, 0) !important;
+  background: black !important;
+}
