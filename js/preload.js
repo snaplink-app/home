@@ -3,4 +3,4 @@ const SNAP = {
 }
 
 //shutdown redirect
-window.location.replace("https://snaplink.app/notice")
+//window.location.replace("https://snaplink.app/notice")
